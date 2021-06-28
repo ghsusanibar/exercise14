@@ -1,6 +1,6 @@
 main:
-  project_name: exercise_14
-  experiment_name: dev
+  project_name: tmp_exercise_14
+  experiment_name: tmp_dev
   execute_steps:
     - download
     - preprocess
@@ -13,8 +13,8 @@ main:
   # pseudo-random operations
   random_seed: 42
 data:
-  file_url: "https://raw.githubusercontent.com/udacity/nd0821-c2-build-model-workflow/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?token=ABNEVO6ANSAW5NZCIJ5ZXV3AOVMZK"
-  reference_dataset: "exercise_14/preprocessed_data.csv:latest"
+  file_url: "https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/demo/pandas_profiling/genres_mod.parquet?raw=true"
+  reference_dataset: "tmp_exercise_14/preprocessed_data.csv:latest"
   # Threshold for Kolomorov-Smirnov test
   ks_alpha: 0.05
   test_size: 0.3

@@ -35,6 +35,7 @@ def go(args):
 
     logger.info("Scoring")
     score = roc_auc_score(y_test, pred_proba, average="macro", multi_class="ovo")
+    logger.info("AUC ---> " + str(score))
 
     run.summary["AUC"] = score
 

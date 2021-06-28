@@ -49,7 +49,7 @@ def go(args):
             logger.info(f"Uploading the {split} dataset to {artifact_name}")
 
             # Save then upload to W&B
-            df.to_csv(temp_path)
+            df.to_csv(temp_path, index=False)
 
             artifact = wandb.Artifact(
                 name=artifact_name,

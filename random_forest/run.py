@@ -50,6 +50,7 @@ def go(args):
     logger.info("Setting up pipeline")
 
     pipe, used_columns = get_training_inference_pipeline(args)
+    logger.info("used_columns ---> " + str(used_columns))
 
     logger.info("Fitting")
     pipe.fit(X_train[used_columns], y_train)
